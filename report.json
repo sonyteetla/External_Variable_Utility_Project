@@ -1,0 +1,210 @@
+[ {
+  "differences" : [ {
+    "variable" : "PPA1",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  } ],
+  "file2" : "IP215000.list",
+  "file1" : "IP210480.list"
+}, {
+  "differences" : [ {
+    "variable" : "PPA1",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  } ],
+  "file2" : "IP217630.list",
+  "file1" : "IP210480.list"
+}, {
+  "differences" : [ {
+    "variable" : "PPA1",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  } ],
+  "file2" : "IP217930.list",
+  "file1" : "IP210480.list"
+}, {
+  "differences" : [ {
+    "variable" : "PPA1",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  } ],
+  "file2" : "IP217940.list",
+  "file1" : "IP210480.list"
+}, {
+  "differences" : [ {
+    "variable" : "PPA1",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  } ],
+  "file2" : "IP218670.list",
+  "file1" : "IP210480.list"
+}, {
+  "differences" : [ {
+    "variable" : "PPA1",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  } ],
+  "file2" : "IP220170.list",
+  "file1" : "IP210480.list"
+}, {
+  "differences" : [ {
+    "variable" : "CLASS",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  } ],
+  "file2" : "IP217630.list",
+  "file1" : "IP215000.list"
+}, {
+  "differences" : [ {
+    "variable" : "CLASS",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  } ],
+  "file2" : "IP217930.list",
+  "file1" : "IP215000.list"
+}, {
+  "differences" : [ {
+    "variable" : "CLASS",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  } ],
+  "file2" : "IP217940.list",
+  "file1" : "IP215000.list"
+}, {
+  "differences" : [ {
+    "variable" : "CLASS",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  } ],
+  "file2" : "IP218670.list",
+  "file1" : "IP215000.list"
+}, {
+  "differences" : [ {
+    "variable" : "CLASS",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  } ],
+  "file2" : "IP220170.list",
+  "file1" : "IP215000.list"
+}, {
+  "differences" : [ {
+    "variable" : "IP217630",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "RECEIVER",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  } ],
+  "file2" : "IP217930.list",
+  "file1" : "IP217630.list"
+}, {
+  "differences" : [ {
+    "variable" : "IP217630",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "RECEIVER",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  } ],
+  "file2" : "IP217940.list",
+  "file1" : "IP217630.list"
+}, {
+  "differences" : [ {
+    "variable" : "IP217630",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "RECEIVER",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  } ],
+  "file2" : "IP218670.list",
+  "file1" : "IP217630.list"
+}, {
+  "differences" : [ {
+    "variable" : "IP217630",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "RECEIVER",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  } ],
+  "file2" : "IP220170.list",
+  "file1" : "IP217630.list"
+}, {
+  "differences" : [ {
+    "variable" : "PARMCEE",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  } ],
+  "file2" : "IP217940.list",
+  "file1" : "IP217930.list"
+}, {
+  "differences" : [ {
+    "variable" : "PARMCEE",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  } ],
+  "file2" : "IP218670.list",
+  "file1" : "IP217930.list"
+}, {
+  "differences" : [ {
+    "variable" : "PARMCEE",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  } ],
+  "file2" : "IP220170.list",
+  "file1" : "IP217930.list"
+}, {
+  "differences" : [ {
+    "variable" : "PPA3",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  } ],
+  "file2" : "IP218670.list",
+  "file1" : "IP217940.list"
+}, {
+  "differences" : [ {
+    "variable" : "PPA3",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  } ],
+  "file2" : "IP220170.list",
+  "file1" : "IP217940.list"
+}, {
+  "differences" : [ {
+    "variable" : "IP218670",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  } ],
+  "file2" : "IP220170.list",
+  "file1" : "IP218670.list"
+} ]

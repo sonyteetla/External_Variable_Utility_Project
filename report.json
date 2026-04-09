@@ -1,33 +1,167 @@
 [ {
+  "similarity" : 9.999999999999998,
   "differences" : [ {
-    "variable" : "PPA1",
+    "variable" : "END-IF",
     "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP00404-ACCT-RNG-INDEX",
+    "issue" : "LEVEL_MISMATCH",
+    "file1Value" : "Level 85",
+    "file2Value" : "Level 88"
+  }, {
+    "variable" : "IP00404-ACCT-RNG-INDEX",
+    "issue" : "POSITION_MISMATCH",
+    "file1Value" : "143",
+    "file2Value" : "149"
+  }, {
+    "variable" : "END-PERFORM",
+    "issue" : "MISSING_IN_FILE1",
     "file1Value" : null,
     "file2Value" : null
   } ],
   "file2" : "IP215000.list",
   "file1" : "IP210480.list"
 }, {
+  "similarity" : 15.0,
   "differences" : [ {
-    "variable" : "PPA1",
+    "variable" : "END-IF",
+    "issue" : "POSITION_MISMATCH",
+    "file1Value" : "142",
+    "file2Value" : "6612"
+  }, {
+    "variable" : "IP00404-ACCT-RNG-INDEX",
     "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP66102-NORMAL-IPM-MSG",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-MONTH",
+    "issue" : "MISSING_IN_FILE1",
     "file1Value" : null,
     "file2Value" : null
   } ],
   "file2" : "IP217630.list",
   "file1" : "IP210480.list"
 }, {
+  "similarity" : 1.5789473684210524,
   "differences" : [ {
-    "variable" : "PPA1",
+    "variable" : "END-IF",
+    "issue" : "LEVEL_MISMATCH",
+    "file1Value" : "Level 1",
+    "file2Value" : "Level 2"
+  }, {
+    "variable" : "END-IF",
+    "issue" : "POSITION_MISMATCH",
+    "file1Value" : "142",
+    "file2Value" : "6353"
+  }, {
+    "variable" : "IP00404-ACCT-RNG-INDEX",
     "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-COMPILED-TEXT",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-TIMESTAMP",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-PGM-ID",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-MINUTE",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-SECOND",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-WHEN-COMPILED-X",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-DASH",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-PGM-VERSION",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-STARTED-TEXT",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-PROGRAM-START-MESSAGE",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-DAY",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-DOT-1",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-DOT-2",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-HOUR",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-WHEN-COMPILED",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-MONTH",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-YEAR",
+    "issue" : "MISSING_IN_FILE1",
     "file1Value" : null,
     "file2Value" : null
   } ],
   "file2" : "IP217930.list",
   "file1" : "IP210480.list"
 }, {
+  "similarity" : 30.0,
   "differences" : [ {
-    "variable" : "PPA1",
+    "variable" : "END-IF",
+    "issue" : "POSITION_MISMATCH",
+    "file1Value" : "142",
+    "file2Value" : "6517"
+  }, {
+    "variable" : "IP00404-ACCT-RNG-INDEX",
     "issue" : "MISSING_IN_FILE2",
     "file1Value" : null,
     "file2Value" : null
@@ -35,17 +169,89 @@
   "file2" : "IP217940.list",
   "file1" : "IP210480.list"
 }, {
+  "similarity" : 4.285714285714286,
   "differences" : [ {
-    "variable" : "PPA1",
+    "variable" : "END-IF",
+    "issue" : "POSITION_MISMATCH",
+    "file1Value" : "142",
+    "file2Value" : "6547"
+  }, {
+    "variable" : "IP00404-ACCT-RNG-INDEX",
     "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-ATM-MV-IND",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-REGION",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-ENDPOINT",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP00702-CA-IDX",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-UCAF-IND",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-BIN",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-AB",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-ICA",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-RE-POWER-IND",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-POS-MV-IND",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-COUNTRY",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-FORMAT-INDICATOR",
+    "issue" : "MISSING_IN_FILE1",
     "file1Value" : null,
     "file2Value" : null
   } ],
   "file2" : "IP218670.list",
   "file1" : "IP210480.list"
 }, {
+  "similarity" : 30.0,
   "differences" : [ {
-    "variable" : "PPA1",
+    "variable" : "END-IF",
+    "issue" : "POSITION_MISMATCH",
+    "file1Value" : "142",
+    "file2Value" : "6372"
+  }, {
+    "variable" : "IP00404-ACCT-RNG-INDEX",
     "issue" : "MISSING_IN_FILE2",
     "file1Value" : null,
     "file2Value" : null
@@ -53,72 +259,389 @@
   "file2" : "IP220170.list",
   "file1" : "IP210480.list"
 }, {
+  "similarity" : 0.0,
   "differences" : [ {
-    "variable" : "CLASS",
+    "variable" : "END-PERFORM",
     "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP00404-ACCT-RNG-INDEX",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "END-IF",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP66102-NORMAL-IPM-MSG",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-MONTH",
+    "issue" : "MISSING_IN_FILE1",
     "file1Value" : null,
     "file2Value" : null
   } ],
   "file2" : "IP217630.list",
   "file1" : "IP215000.list"
 }, {
+  "similarity" : 0.0,
   "differences" : [ {
-    "variable" : "CLASS",
+    "variable" : "END-PERFORM",
     "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP00404-ACCT-RNG-INDEX",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-COMPILED-TEXT",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-TIMESTAMP",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "END-IF",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-PGM-ID",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-MINUTE",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-SECOND",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-WHEN-COMPILED-X",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-DASH",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-PGM-VERSION",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-STARTED-TEXT",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-PROGRAM-START-MESSAGE",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-DAY",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-DOT-1",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-DOT-2",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-HOUR",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-WHEN-COMPILED",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-MONTH",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-YEAR",
+    "issue" : "MISSING_IN_FILE1",
     "file1Value" : null,
     "file2Value" : null
   } ],
   "file2" : "IP217930.list",
   "file1" : "IP215000.list"
 }, {
+  "similarity" : 0.0,
   "differences" : [ {
-    "variable" : "CLASS",
+    "variable" : "END-PERFORM",
     "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP00404-ACCT-RNG-INDEX",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "END-IF",
+    "issue" : "MISSING_IN_FILE1",
     "file1Value" : null,
     "file2Value" : null
   } ],
   "file2" : "IP217940.list",
   "file1" : "IP215000.list"
 }, {
+  "similarity" : 0.0,
   "differences" : [ {
-    "variable" : "CLASS",
+    "variable" : "END-PERFORM",
     "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP00404-ACCT-RNG-INDEX",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-ATM-MV-IND",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-REGION",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-ENDPOINT",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "END-IF",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP00702-CA-IDX",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-UCAF-IND",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-BIN",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-AB",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-ICA",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-RE-POWER-IND",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-POS-MV-IND",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-COUNTRY",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-FORMAT-INDICATOR",
+    "issue" : "MISSING_IN_FILE1",
     "file1Value" : null,
     "file2Value" : null
   } ],
   "file2" : "IP218670.list",
   "file1" : "IP215000.list"
 }, {
+  "similarity" : 0.0,
   "differences" : [ {
-    "variable" : "CLASS",
+    "variable" : "END-PERFORM",
     "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP00404-ACCT-RNG-INDEX",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "END-IF",
+    "issue" : "MISSING_IN_FILE1",
     "file1Value" : null,
     "file2Value" : null
   } ],
   "file2" : "IP220170.list",
   "file1" : "IP215000.list"
 }, {
+  "similarity" : 1.5789473684210524,
   "differences" : [ {
-    "variable" : "IP217630",
+    "variable" : "END-IF",
+    "issue" : "LEVEL_MISMATCH",
+    "file1Value" : "Level 1",
+    "file2Value" : "Level 2"
+  }, {
+    "variable" : "END-IF",
+    "issue" : "POSITION_MISMATCH",
+    "file1Value" : "6612",
+    "file2Value" : "6353"
+  }, {
+    "variable" : "IP66102-NORMAL-IPM-MSG",
     "issue" : "MISSING_IN_FILE2",
     "file1Value" : null,
     "file2Value" : null
   }, {
-    "variable" : "RECEIVER",
-    "issue" : "MISSING_IN_FILE2",
+    "variable" : "IP996011-START-MONTH",
+    "issue" : "LEVEL_MISMATCH",
+    "file1Value" : "Level 3",
+    "file2Value" : "Level 10"
+  }, {
+    "variable" : "IP996011-START-MONTH",
+    "issue" : "TYPE_MISMATCH",
+    "file1Value" : null,
+    "file2Value" : "PIC 99"
+  }, {
+    "variable" : "IP996011-START-MONTH",
+    "issue" : "POSITION_MISMATCH",
+    "file1Value" : "6614",
+    "file2Value" : "6342"
+  }, {
+    "variable" : "IP996011-COMPILED-TEXT",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-TIMESTAMP",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-PGM-ID",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-MINUTE",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-SECOND",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-WHEN-COMPILED-X",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-DASH",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-PGM-VERSION",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-STARTED-TEXT",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-PROGRAM-START-MESSAGE",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-DAY",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-DOT-1",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-DOT-2",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-HOUR",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-WHEN-COMPILED",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-YEAR",
+    "issue" : "MISSING_IN_FILE1",
     "file1Value" : null,
     "file2Value" : null
   } ],
   "file2" : "IP217930.list",
   "file1" : "IP217630.list"
 }, {
+  "similarity" : 20.0,
   "differences" : [ {
-    "variable" : "IP217630",
+    "variable" : "END-IF",
+    "issue" : "POSITION_MISMATCH",
+    "file1Value" : "6612",
+    "file2Value" : "6517"
+  }, {
+    "variable" : "IP66102-NORMAL-IPM-MSG",
     "issue" : "MISSING_IN_FILE2",
     "file1Value" : null,
     "file2Value" : null
   }, {
-    "variable" : "RECEIVER",
+    "variable" : "IP996011-START-MONTH",
     "issue" : "MISSING_IN_FILE2",
     "file1Value" : null,
     "file2Value" : null
@@ -126,27 +649,99 @@
   "file2" : "IP217940.list",
   "file1" : "IP217630.list"
 }, {
+  "similarity" : 4.0,
   "differences" : [ {
-    "variable" : "IP217630",
+    "variable" : "END-IF",
+    "issue" : "POSITION_MISMATCH",
+    "file1Value" : "6612",
+    "file2Value" : "6547"
+  }, {
+    "variable" : "IP66102-NORMAL-IPM-MSG",
     "issue" : "MISSING_IN_FILE2",
     "file1Value" : null,
     "file2Value" : null
   }, {
-    "variable" : "RECEIVER",
+    "variable" : "IP996011-START-MONTH",
     "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-ATM-MV-IND",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-REGION",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-ENDPOINT",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP00702-CA-IDX",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-UCAF-IND",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-BIN",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-AB",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-ICA",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-RE-POWER-IND",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-POS-MV-IND",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-COUNTRY",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-FORMAT-INDICATOR",
+    "issue" : "MISSING_IN_FILE1",
     "file1Value" : null,
     "file2Value" : null
   } ],
   "file2" : "IP218670.list",
   "file1" : "IP217630.list"
 }, {
+  "similarity" : 20.0,
   "differences" : [ {
-    "variable" : "IP217630",
+    "variable" : "END-IF",
+    "issue" : "POSITION_MISMATCH",
+    "file1Value" : "6612",
+    "file2Value" : "6372"
+  }, {
+    "variable" : "IP66102-NORMAL-IPM-MSG",
     "issue" : "MISSING_IN_FILE2",
     "file1Value" : null,
     "file2Value" : null
   }, {
-    "variable" : "RECEIVER",
+    "variable" : "IP996011-START-MONTH",
     "issue" : "MISSING_IN_FILE2",
     "file1Value" : null,
     "file2Value" : null
@@ -154,8 +749,99 @@
   "file2" : "IP220170.list",
   "file1" : "IP217630.list"
 }, {
+  "similarity" : 1.6666666666666663,
   "differences" : [ {
-    "variable" : "PARMCEE",
+    "variable" : "IP996011-COMPILED-TEXT",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-TIMESTAMP",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "END-IF",
+    "issue" : "LEVEL_MISMATCH",
+    "file1Value" : "Level 2",
+    "file2Value" : "Level 1"
+  }, {
+    "variable" : "END-IF",
+    "issue" : "POSITION_MISMATCH",
+    "file1Value" : "6353",
+    "file2Value" : "6517"
+  }, {
+    "variable" : "IP996011-PGM-ID",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-MINUTE",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-SECOND",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-WHEN-COMPILED-X",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-DASH",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-PGM-VERSION",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-STARTED-TEXT",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-PROGRAM-START-MESSAGE",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-DAY",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-DOT-1",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-DOT-2",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-HOUR",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-WHEN-COMPILED",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-MONTH",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-YEAR",
     "issue" : "MISSING_IN_FILE2",
     "file1Value" : null,
     "file2Value" : null
@@ -163,17 +849,259 @@
   "file2" : "IP217940.list",
   "file1" : "IP217930.list"
 }, {
+  "similarity" : 0.9999999999999999,
   "differences" : [ {
-    "variable" : "PARMCEE",
+    "variable" : "IP996011-COMPILED-TEXT",
     "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-TIMESTAMP",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "END-IF",
+    "issue" : "LEVEL_MISMATCH",
+    "file1Value" : "Level 2",
+    "file2Value" : "Level 1"
+  }, {
+    "variable" : "END-IF",
+    "issue" : "POSITION_MISMATCH",
+    "file1Value" : "6353",
+    "file2Value" : "6547"
+  }, {
+    "variable" : "IP996011-PGM-ID",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-MINUTE",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-SECOND",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-WHEN-COMPILED-X",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-DASH",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-PGM-VERSION",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-STARTED-TEXT",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-PROGRAM-START-MESSAGE",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-DAY",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-DOT-1",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-DOT-2",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-HOUR",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-WHEN-COMPILED",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-MONTH",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-YEAR",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-ATM-MV-IND",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-REGION",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-ENDPOINT",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP00702-CA-IDX",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-UCAF-IND",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-BIN",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-AB",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-ICA",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-RE-POWER-IND",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-POS-MV-IND",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-COUNTRY",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-FORMAT-INDICATOR",
+    "issue" : "MISSING_IN_FILE1",
     "file1Value" : null,
     "file2Value" : null
   } ],
   "file2" : "IP218670.list",
   "file1" : "IP217930.list"
 }, {
+  "similarity" : 1.6666666666666663,
   "differences" : [ {
-    "variable" : "PARMCEE",
+    "variable" : "IP996011-COMPILED-TEXT",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-TIMESTAMP",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "END-IF",
+    "issue" : "LEVEL_MISMATCH",
+    "file1Value" : "Level 2",
+    "file2Value" : "Level 1"
+  }, {
+    "variable" : "END-IF",
+    "issue" : "POSITION_MISMATCH",
+    "file1Value" : "6353",
+    "file2Value" : "6372"
+  }, {
+    "variable" : "IP996011-PGM-ID",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-MINUTE",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-SECOND",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-WHEN-COMPILED-X",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-DASH",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-PGM-VERSION",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-STARTED-TEXT",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-PROGRAM-START-MESSAGE",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-DAY",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-DOT-1",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-DOT-2",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-HOUR",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-WHEN-COMPILED",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-MONTH",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP996011-START-YEAR",
     "issue" : "MISSING_IN_FILE2",
     "file1Value" : null,
     "file2Value" : null
@@ -181,26 +1109,149 @@
   "file2" : "IP220170.list",
   "file1" : "IP217930.list"
 }, {
+  "similarity" : 4.615384615384615,
   "differences" : [ {
-    "variable" : "PPA3",
-    "issue" : "MISSING_IN_FILE2",
+    "variable" : "END-IF",
+    "issue" : "POSITION_MISMATCH",
+    "file1Value" : "6517",
+    "file2Value" : "6547"
+  }, {
+    "variable" : "IP0041A-ATM-MV-IND",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-REGION",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-ENDPOINT",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP00702-CA-IDX",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-UCAF-IND",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-BIN",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-AB",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-ICA",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-RE-POWER-IND",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-POS-MV-IND",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-COUNTRY",
+    "issue" : "MISSING_IN_FILE1",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-FORMAT-INDICATOR",
+    "issue" : "MISSING_IN_FILE1",
     "file1Value" : null,
     "file2Value" : null
   } ],
   "file2" : "IP218670.list",
   "file1" : "IP217940.list"
 }, {
+  "similarity" : 60.0,
   "differences" : [ {
-    "variable" : "PPA3",
-    "issue" : "MISSING_IN_FILE2",
-    "file1Value" : null,
-    "file2Value" : null
+    "variable" : "END-IF",
+    "issue" : "POSITION_MISMATCH",
+    "file1Value" : "6517",
+    "file2Value" : "6372"
   } ],
   "file2" : "IP220170.list",
   "file1" : "IP217940.list"
 }, {
+  "similarity" : 4.615384615384615,
   "differences" : [ {
-    "variable" : "IP218670",
+    "variable" : "IP0041A-ATM-MV-IND",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-REGION",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-ENDPOINT",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "END-IF",
+    "issue" : "POSITION_MISMATCH",
+    "file1Value" : "6547",
+    "file2Value" : "6372"
+  }, {
+    "variable" : "IP00702-CA-IDX",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-UCAF-IND",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-BIN",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-AB",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-ICA",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-RE-POWER-IND",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-POS-MV-IND",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-COUNTRY",
+    "issue" : "MISSING_IN_FILE2",
+    "file1Value" : null,
+    "file2Value" : null
+  }, {
+    "variable" : "IP0041A-FORMAT-INDICATOR",
     "issue" : "MISSING_IN_FILE2",
     "file1Value" : null,
     "file2Value" : null

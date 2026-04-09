@@ -1,0 +1,37 @@
+GO to Project root folder :
+
+mvn package
+
+
+Command Type 1 : (multi - file comparision)
+
+java -jar app.jar <zipPath> 
+
+Eg :
+java -jar target/cobol-parser-0.0.1-SNAPSHOT.jar "D:\External_Variable_Utility\Listings_Testing.zip" FULL
+
+
+
+
+Command Type 2 : (Passing Parameter like Level no, Variable_name, External or no (optional))
+
+java -jar app.jar <zip> VAR <LEVEL> <VARIABLE_NAME> [EXTERNAL]
+
+Eg :
+
+ java -jar target/cobol-parser-0.0.1-SNAPSHOT.jar "D:\External_Variable_Utility\Listings_Testing.zip" VAR 01  IP00702-CA-TABLE EXTERNAL
+
+
+Command Type 3 : (Passing Parameter like Program name)
+
+
+Variable impact:
+java -jar app.jar zip.zip VAR 05 IP60001-PGM-NAME
+
+
+Program search:
+java -jar app.jar zip.zip PROGRAM IP217930
+
+
+Full comparison:
+java -jar app.jar zip.zip FULL

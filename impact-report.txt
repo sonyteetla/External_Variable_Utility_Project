@@ -1,0 +1,8 @@
+Variable: IP00702-CA-TABLE
+
+ - IP215000.list
+ - IP217630.list
+ - IP217930.list
+ - IP218670.list
+
+Total impacted files: 4

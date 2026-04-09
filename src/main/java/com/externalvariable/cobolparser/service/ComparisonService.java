@@ -14,95 +14,90 @@ public class ComparisonService {
             return results;
         }
 
-        // 🔥 STEP 1: TREE comparison
-        compareNodesIgnoringRoot(tree1, tree2, results);
-
-        // 🔥 STEP 2: FLAT comparison (IMPORTANT FIX)
+        // ✅ FLATTEN BOTH TREES
         Map<String, CobolVariable> map1 = new HashMap<>();
         Map<String, CobolVariable> map2 = new HashMap<>();
 
         flattenTree(tree1, map1);
         flattenTree(tree2, map2);
 
-        for (String key : map1.keySet()) {
-            if (!map2.containsKey(key)) {
+        // ✅ COMPARE
+        for (String varName : map1.keySet()) {
 
+            CobolVariable v1 = map1.get(varName);
+            CobolVariable v2 = map2.get(varName);
+
+            if (v2 == null) {
+                // 🔴 MISSING
                 ComparisonResult r = new ComparisonResult();
-                r.setVariable(key);
+                r.setVariable(varName);
                 r.setIssue("MISSING_IN_FILE2");
+                results.add(r);
+            } else {
 
+                // 🟡 LEVEL MISMATCH
+                if (v1.getLevel() != v2.getLevel()) {
+                    ComparisonResult r = new ComparisonResult();
+                    r.setVariable(varName);
+                    r.setIssue("LEVEL_MISMATCH");
+                    r.setFile1Value("Level " + v1.getLevel());
+                    r.setFile2Value("Level " + v2.getLevel());
+                    results.add(r);
+                }
+
+                // 🟡 TYPE MISMATCH
+                if (!Objects.equals(v1.getPic(), v2.getPic())) {
+                    ComparisonResult r = new ComparisonResult();
+                    r.setVariable(varName);
+                    r.setIssue("TYPE_MISMATCH");
+                    r.setFile1Value(v1.getPic());
+                    r.setFile2Value(v2.getPic());
+                    results.add(r);
+                }
+
+                // 🟡 POSITION MISMATCH
+                if (!Objects.equals(v1.getPosition(), v2.getPosition())) {
+                    if (v1.getPosition() != null && v2.getPosition() != null) {
+                        ComparisonResult r = new ComparisonResult();
+                        r.setVariable(varName);
+                        r.setIssue("POSITION_MISMATCH");
+                        r.setFile1Value(v1.getPosition());
+                        r.setFile2Value(v2.getPosition());
+                        results.add(r);
+                    }
+                }
+            }
+        }
+
+        // ✅ ALSO CHECK REVERSE (IMPORTANT FIX)
+        for (String varName : map2.keySet()) {
+            if (!map1.containsKey(varName)) {
+                ComparisonResult r = new ComparisonResult();
+                r.setVariable(varName);
+                r.setIssue("MISSING_IN_FILE1");
                 results.add(r);
             }
         }
 
-        // 🔥 REMOVE DUPLICATES (VERY IMPORTANT)
         return removeDuplicates(results);
-    }
-
-    private void compareNodesIgnoringRoot(CobolVariable tree1, CobolVariable tree2, List<ComparisonResult> results) {
-
-        Map<String, CobolVariable> map2 = new HashMap<>();
-        flattenTree(tree2, map2);
-
-        for (CobolVariable child : tree1.getChildren()) {
-            compareFlattened(child, map2, results);
-        }
     }
 
     private void flattenTree(CobolVariable node, Map<String, CobolVariable> map) {
 
         if (node == null) return;
 
-        map.put(node.getName(), node);
+        String name = node.getName();
+
+        // 🔥 CRITICAL FIX: DO NOT OVERRIDE EXISTING VARIABLE
+        if (!map.containsKey(name)) {
+            map.put(name, node);
+        }
 
         for (CobolVariable child : node.getChildren()) {
             flattenTree(child, map);
         }
     }
 
-    private void compareFlattened(CobolVariable node, Map<String, CobolVariable> map2, List<ComparisonResult> results) {
-
-        if (node == null) return;
-
-        if (!map2.containsKey(node.getName())) {
-
-            ComparisonResult r = new ComparisonResult();
-            r.setVariable(node.getName());
-            r.setIssue("MISSING_IN_FILE2");
-
-            results.add(r);
-
-        } else {
-
-            CobolVariable node2 = map2.get(node.getName());
-
-            // Level mismatch
-            if (node.getLevel() != node2.getLevel()) {
-                ComparisonResult r = new ComparisonResult();
-                r.setVariable(node.getName());
-                r.setIssue("LEVEL_MISMATCH");
-                r.setFile1Value("Level " + node.getLevel());
-                r.setFile2Value("Level " + node2.getLevel());
-                results.add(r);
-            }
-
-            // Type mismatch
-            if (!Objects.equals(node.getPic(), node2.getPic())) {
-                ComparisonResult r = new ComparisonResult();
-                r.setVariable(node.getName());
-                r.setIssue("TYPE_MISMATCH");
-                r.setFile1Value(node.getPic());
-                r.setFile2Value(node2.getPic());
-                results.add(r);
-            }
-        }
-
-        for (CobolVariable child : node.getChildren()) {
-            compareFlattened(child, map2, results);
-        }
-    }
-
-    // 🔥 REMOVE DUPLICATE RESULTS
     private List<ComparisonResult> removeDuplicates(List<ComparisonResult> results) {
 
         Map<String, ComparisonResult> uniqueMap = new LinkedHashMap<>();
@@ -113,5 +108,52 @@ public class ComparisonService {
         }
 
         return new ArrayList<>(uniqueMap.values());
+    }
+
+    public double calculateSimilarity(CobolVariable tree1, CobolVariable tree2) {
+
+        Map<String, CobolVariable> map1 = new HashMap<>();
+        Map<String, CobolVariable> map2 = new HashMap<>();
+
+        flattenTree(tree1, map1);
+        flattenTree(tree2, map2);
+
+        Set<String> allVars = new HashSet<>();
+        allVars.addAll(map1.keySet());
+        allVars.addAll(map2.keySet());
+
+        int total = allVars.size();
+        double score = 0;
+
+        for (String var : allVars) {
+
+            if (map1.containsKey(var) && map2.containsKey(var)) {
+
+                CobolVariable v1 = map1.get(var);
+                CobolVariable v2 = map2.get(var);
+
+                double localScore = 1.0;
+
+                if (!Objects.equals(v1.getLevel(), v2.getLevel())) {
+                    localScore -= 0.3;
+                }
+
+                if (!Objects.equals(v1.getPic(), v2.getPic())) {
+                    localScore -= 0.3;
+                }
+
+                if (!Objects.equals(v1.getPosition(), v2.getPosition())) {
+                    localScore -= 0.4;
+                }
+
+                if (localScore < 0) localScore = 0;
+
+                score += localScore;
+            }
+        }
+
+        if (total == 0) return 0;
+
+        return (score / total) * 100;
     }
 }

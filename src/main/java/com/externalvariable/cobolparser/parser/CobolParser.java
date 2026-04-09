@@ -9,72 +9,105 @@ public class CobolParser {
 
     public List<CobolVariable> parse(List<String> lines) {
 
-    	Map<String, CobolVariable> uniqueMap = new LinkedHashMap<>();
+        Map<String, CobolVariable> uniqueMap = new LinkedHashMap<>();
 
-        Pattern pattern = Pattern.compile("^\\s*(\\d{1,2})\\s+([A-Z][A-Z0-9-]*)");
-        Pattern picPattern = Pattern.compile("PIC\\s+([A-Z0-9\\(\\)V]+)");
-        Pattern posPattern = Pattern.compile("BLX=(\\d+),(\\d+)");
+        // ✅ STRICT + SAFE pattern
+        Pattern varPattern = Pattern.compile("^\\s*(\\d{1,2})\\s+([A-Z][A-Z0-9-]*)");
+        Pattern picPattern = Pattern.compile("\\bPIC\\s+([A-Z0-9\\(\\)V]+)");
 
-        for (String line : lines) {
+        boolean insideCopybook = false;
+        boolean currentBlockExternal = false;
 
-            if (line == null || line.trim().isEmpty()) continue;
+        for (String rawLine : lines) {
 
-            line = line.toUpperCase();
+            if (rawLine == null || rawLine.trim().isEmpty()) continue;
 
-            Matcher m = pattern.matcher(line);
+            String line = rawLine.toUpperCase();
 
-            if (m.find()) {
+            // ❌ Ignore comments
+            if (line.trim().startsWith("*")) continue;
 
-                String levelStr = m.group(1);
-                String name = m.group(2);
+            // ❌ Ignore separators
+            if (line.contains("*****")) continue;
 
-                // ❌ Skip condition level
-                if ("88".equals(levelStr)) continue;
+            // ❌ Ignore headers
+            if (line.contains("MODIFICATIONS HISTORY")) continue;
+            if (line.contains("COPYBOOK")) continue;
 
-                // ❌ BASIC CLEANING
-                if (name.length() < 3) continue;
-                if (name.matches("\\d+")) continue;
-                if (name.matches("[0-9A-F]+")) continue;
-                if (name.startsWith("000")) continue;
-
-                // ❌ REMOVE SYSTEM VARIABLES
-                if (name.equals("RETURN-CODE")) continue;
-                if (name.equals("PGMNAME")) continue;
-                if (name.equals("CEEUOPT")) continue;
-                if (name.equals("IEWBLIT")) continue;
-                if (name.equals("OFFSET")) continue;
-                if (name.equals("DEFINED")) continue;
-                if (name.equals("PROGRAM-ID")) continue;
-                if (name.equals("ENTRY")) continue;
-
-                
-                CobolVariable var = new CobolVariable();
-
-                var.setLevel(Integer.parseInt(levelStr));
-                var.setName(name);
-
-                // PIC extraction
-                Matcher picMatcher = picPattern.matcher(line);
-                if (picMatcher.find()) {
-                    var.setPic("PIC " + picMatcher.group(1));
-                }
-
-                // Position extraction
-                Matcher posMatcher = posPattern.matcher(line);
-                if (posMatcher.find()) {
-                    var.setPosition(posMatcher.group(1) + "-" + posMatcher.group(2));
-                }
-
-                uniqueMap.put(name, var);
-
-                // Debug
-                System.out.println("Parsed: " + name);
+            // ❌ Stop condition
+            if (line.contains("END OF COPYBOOK")) {
+                break;
             }
+
+            // 🔥 FIXED PREFIX REMOVAL (IMPORTANT)
+            line = line.replaceFirst("^\\s*[0-9]{5,}[A-Z]?\\s+", "");
+
+            // 🔥 Start parsing when COBOL structure appears
+            if (line.matches("^\\s*\\d{1,2}\\s+[A-Z].*")) {
+                insideCopybook = true;
+            }
+
+            if (!insideCopybook) continue;
+
+            Matcher matcher = varPattern.matcher(line);
+
+            if (!matcher.find()) continue;
+
+            String levelStr = matcher.group(1);
+            String name = matcher.group(2);
+
+            // 🔥 CLEAN NAME
+            name = name.trim().replaceAll("\\.$", "");
+
+            // 🔥 HANDLE EXTERNAL BLOCK
+            if (levelStr.equals("01")) {
+                currentBlockExternal = line.contains("EXTERNAL");
+            }
+
+            // ❌ Skip unwanted
+            if (name.matches("IP\\d{6}")) continue;
+            if (name.matches("\\d+")) continue;
+
+            if (name.equals("RETURN-CODE") ||
+                name.equals("PGMNAME") ||
+                name.equals("CEEUOPT") ||
+                name.equals("IEWBLIT") ||
+                name.equals("OFFSET") ||
+                name.equals("DEFINED") ||
+                name.equals("PROGRAM-ID") ||
+                name.equals("ENTRY")) continue;
+
+            // ✅ Only business variables
+            if (!name.contains("-")) continue;
+
+            CobolVariable var = new CobolVariable();
+            var.setLevel(Integer.parseInt(levelStr));
+            var.setName(name);
+
+            // 🔥 FIX: propagate EXTERNAL correctly
+            boolean isExternal = line.contains("EXTERNAL") || currentBlockExternal;
+            var.setExternal(isExternal);
+
+            // ✅ PIC extraction
+            Matcher picMatcher = picPattern.matcher(line);
+            if (picMatcher.find()) {
+                var.setPic("PIC " + picMatcher.group(1));
+            }
+
+            // ✅ Position fallback
+            var.setPosition(String.valueOf(uniqueMap.size() + 1));
+
+            uniqueMap.putIfAbsent(name, var);
+
+            // 🔍 DEBUG
+            System.out.println("Parsed: " + name +
+                    " | Level: " + levelStr +
+                    " | External: " + isExternal);
         }
 
         List<CobolVariable> variables = new ArrayList<>(uniqueMap.values());
 
-        System.out.println("✅ Unique Parsed variables count: " + variables.size());
+        System.out.println("✅ Total Parsed Variables: " + variables.size());
 
         return variables;
     }

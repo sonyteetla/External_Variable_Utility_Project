@@ -8,6 +8,7 @@ public class CobolVariable {
     private String name;
     private String pic;
     private String position;
+    private boolean external;
 
     private List<CobolVariable> children = new ArrayList<>();
 
@@ -24,4 +25,12 @@ public class CobolVariable {
     public void setPosition(String position) { this.position = position; }
 
     public List<CobolVariable> getChildren() { return children; }
+    
+    public boolean isExternal() {
+        return external;
+    }
+
+    public void setExternal(boolean external) {
+        this.external = external;
+    }
 }
